@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="lib/vue.js" ></script>
+	<script type="text/javascript">
+		window.onload=function(){
+            new Vue({
+                el:'#box',
+                data:{
+
+                },
+                methods:{
+                    show:function(){                      
+                        alert('111');
+                      
+                    }
+                }
+            });
+        };
+	</script>
+</head>
+<body>
+	<div id="box">
+		<input type="button"  name="" @contextmenu.prevent="show($event)">
+	</div>
+</body>
+</html>

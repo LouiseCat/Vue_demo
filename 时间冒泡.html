@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="lib/vue.js" ></script>
+	<script type="text/javascript">
+/*		window.onload=function(){
+			new Vue({
+				el:"#app",
+				data:{
+
+				},
+				methods:{
+					show:function(ev){
+						alert(1);
+						ev.cancelBubble=true;
+
+					},
+					show2:function(){
+						alert(2);
+					}
+				}
+			});
+		}*/
+		window.onload=function(){
+			new Vue({
+				el:'#app',
+				data:{
+
+				},
+				methods:{
+					show:function(ev){
+						alert(ev.clientX)
+					}
+				}
+			});
+		};
+	</script>
+</head>
+<body>
+	<!-- <div id="app">
+		<div @click="show2()">
+			<input type="button" name="" value="button" @click="show($event)">
+		</div>
+	</div> -->
+	
+</body>
+</html>

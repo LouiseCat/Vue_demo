@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="lib/vue.js" ></script>
+	<script type="text/javascript">
+		window.onload=function(){
+            new Vue({
+                el:'#box',
+                data:{
+                    arr:['apple','orange'],
+                    json:{a:'apple',b:'orange'}
+
+                },
+                methods:{
+                    add:function(){       
+                    this.arr.push('tomato')     ;      
+                       
+                      
+                    }
+                }
+            });
+        };
+	</script>
+</head>
+<body>
+	<div id="box">
+		<input type="button"  name="" value="button" 
+        @click="add()">
+        <hr>
+        <ul>
+            <li v-for="value in arr">
+                {{value}}
+            </li>
+        </ul>
+	</div>
+</body>
+</html>

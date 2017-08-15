@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="lib/vue.js" ></script>
+		<script>
+			window.onload=function(){
+				new Vue({
+					el:"body",
+					data:{
+						msg:'hello world'
+					}
+				});
+				
+			};
+		</script>
+	</head>
+	<body>
+		<input type="text" v-model="msg">
+        <br>
+        {{msg}}
+        <br>
+        {{*msg}}
+        <br>
+        {{{msg}}}
+	</body>
+</html>

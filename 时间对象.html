@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="lib/vue.js" ></script>
+	<script type="text/javascript">
+		window.onload=function(){
+            new Vue({
+                el:'#box',
+                data:{
+
+                },
+                methods:{
+                    show:function(b,ev){
+                        alert(ev.clientX);
+                        alert(b);
+                    }
+                }
+            });
+        };
+	</script>
+</head>
+<body>
+	<div id="box">
+		<input type="button" name="" value="button"
+		@click="show(12,$event)">
+	</div>
+</body>
+</html>
